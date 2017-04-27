@@ -34,3 +34,6 @@ logs
 
 # OS
 .DS_STORE
+
+# Tests
+features/support/config.js
