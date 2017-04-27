@@ -13,5 +13,8 @@
         "wdio-selenium-standalone-service": "~0.0.8",
         "wdio-spec-reporter": "~0.1.0",
         "webdriverio": "~4.7.0"
+    },
+    "scripts": {
+        "tests": "./node_modules/.bin/wdio"
     }
 }
