@@ -36,9 +36,9 @@ exports.config = {
     
     cucumberOpts: {
         require: [
-            './tests/boilerplate/src/steps/given.js',
-            './tests/boilerplate/src/steps/then.js',
-            './tests/boilerplate/src/steps/when.js',
+            './tests/cucumber-boilerplate/src/steps/given.js',
+            './tests/cucumber-boilerplate/src/steps/when.js',
+            './tests/cucumber-boilerplate/src/steps/then.js',
         ], // <string[]> (file/dir) require files before executing features
         backtrace: false, // <boolean> show full backtrace for errors
         compiler: [
@@ -56,7 +56,7 @@ exports.config = {
         profile: [], // <string[]> (name) specify the profile to use
         strict: true, // <boolean> fail if there are any undefined or pending
                        // steps
-        tags: require('./tests/boilerplate/src/tagProcessor')(process.argv),
+        tags: require('./tests/cucumber-boilerplate/src/tagProcessor')(process.argv),
         timeout: 20000,     // <number> timeout for step definitions
         ignoreUndefinedDefinitions: false,
     },

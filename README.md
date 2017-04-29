@@ -32,6 +32,16 @@ Install the stack on your localhost. This approach takes a little more time to s
 
 The easiest and quickest way to get started is with Vagrant. Running through Vagrant can be a little bit slower. See [INSTALL-vagrant.md](https://raw.githubusercontent.com/Hitchwiki/hitchwiki/master/INSTALL-vagrant.md) for further details.
 
+## How to run the tests
+
+Install all the development dependencies for tests
+
+ `$ npm install --only=dev`
+ 
+Run the tests
+
+ `$ npm run tests`
+ 
 ## License
 Code [MIT](LICENSE.md)
 Contents [Creative Commons](http://creativecommons.org/licenses/by-sa/4.0/)

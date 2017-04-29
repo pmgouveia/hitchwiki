@@ -12,9 +12,10 @@
         "wdio-phantomjs-service": "~0.2.2",
         "wdio-selenium-standalone-service": "~0.0.8",
         "wdio-spec-reporter": "~0.1.0",
-        "webdriverio": "~4.7.0"
+        "webdriverio": "~4.7.0",
+        "cucumber-boilerplate" : "https://github.com/webdriverio/cucumber-boilerplate/archive/master.tar.gz"
     },
     "scripts": {
-        "tests": "./node_modules/.bin/wdio"
+        "tests": "if [ ! -d 'tests/cucumber-boilerplate' ]; then cp -r ./node_modules/cucumber-boilerplate tests/; fi && ./node_modules/.bin/wdio"
     }
 }
